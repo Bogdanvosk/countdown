@@ -9,7 +9,6 @@ const countdown = document.querySelector('#countdown')
 const preloader = document.querySelector('#preloader')
 
 
-
 // Делаем расчеты
 
 // Метка текущего года
@@ -43,11 +42,11 @@ function updateCounter() {
     seconds.innerText = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft
 }
 
-setInterval(updateCounter, 1000)
-
 function showCounter() {
     preloader.style.opacity = 0
     countdown.style.opacity = 1
 }
 
+
+setInterval(updateCounter, 1000)
 setTimeout(showCounter, 1000)
